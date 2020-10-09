@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/*헤더*/
+
+header{
+	height:84px;
+}
+
+.headerLeft{
+	width:1016px;
+	float:left;
+}
+
+.util{
+	font-size:12px;
+	font-weight:100;
+	line-height:24px;
+	text-align:right;
+}
+.util li{
+	margin-right:20px;
+	display:inline-block;
+}
+
+.util a{}
+
+.arrowB{
+	background:url(../images/common/arrow_b.png) no-repeat right center;
+	padding-right:10px;
+}
+
+.headerBottom{
+	line-height:60px;
+}
+
+.logo{
+	float:left;
+	margin-right:30px;
+}
+.logo a{}
+.logo img{}
+
+.gnb{
+	float:left;
+	font-size:17px;
+	font-weight:bold;
+}
+.gnb li{
+	float:left;
+	padding:0 30px;
+	position:relative;
+	height:60px;
+	padding-top:5px;
+	box-sizing:border-box;
+}
+.gnb li::after{
+	content:"";
+	display:block;
+	overflow:hidden;
+	width:100%;
+	height:2px;
+	background:#0000ff;
+	position:absolute;
+	bottom:0px;
+	transform:scale(0,1);
+	transition:transform 0.2s;
+	left:0;
+}
+
+.gnb li:hover::after{
+	transform:scale(1,1);
+}
+
+.gnb a{}
+
+.lnb{
+	position:absolute;
+	z-index:4;
+	background:#333;
+	top:60px;
+	font-size:12px;
+	left:0;
+	width:100%;
+	max-height:0;
+	transition:max-height 1s;
+	text-align:center;
+	overflow:hidden;
+}
+.lnb li{
+	padding:0;
+	width:100%;
+}
+.gnb li:hover .lnb{
+	max-height:1000px;
+}
+.lnb a{
+	color:#fff;
+	display:block;
+}
+
+.searchBtn{
+	float:right;
+	margin-right:20px;
+}
+.searchBtn img{
+	vertical-align:middle;
+}
+.searchBtn a{}
+
+.headerRight{
+	float:right;
+	background:#00b3e3;
+	line-height:84px;
+	font-size:12px;
+	font-weight:bold;
+	width:184px;
+	text-align:center;
+}
+.headerRight a{
+	color:#fff;
+	display:block;
+}
+
+
+/*푸터*/
+
+footer{
+	background:#e9e9e9;
+}
+
+.fTop{
+	padding:100px 0;
+	position:relative;
+	border-bottom:1px solid #ccc;
+	margin-bottom:20px;
+}
+.fMenu{}
+
+.fMenuList{
+	float:left;
+	margin-right:80px;
+	line-height:40px;
+}
+.fMenuList h5{
+	font-size:16px;
+	font-weight:900;
+	background:url(../images/common/arrow_right.png) no-repeat right center;
+	padding-right:10px;
+}
+.fMenuList h5 a{}
+
+.fMenuList dl{}
+.fMenuList dt{
+	font-weight:900;
+}
+.fMenuList dd{
+	font-size:14px;
+}
+.fMenuList dd a{}
+
+.family{
+	width:160px;
+	height:40px;
+	background:#fff url(../images/common/plus_icon.png) no-repeat 166px center;
+	line-height:40px;
+	position:absolute;
+	right:0;
+	top:100px;
+	padding:0 15px;
+}
+
+.topBtn{
+	position:absolute;
+	font-size:14px;
+	background:url(../images/common/arrow_top.png) no-repeat right center;
+	padding-right:15px;
+	right:0;
+}
+.topBtn a{}
+
+.fBottom{
+	color:#222;
+	font-size:12px;
+	position:relative;
+	padding-bottom:30px;
+}
+.fBottom p{
+	line-height:32px;
+}
+.fBottom a{
+	color:#222;
+}
+
+.fBMenu{
+	line-height:32px;
+}
+.fBMenu li{
+	float:left;
+}
+.fBMenu li::before{
+	content:"";
+	display:inline-block;
+	width:1px;
+	height:13px;
+	background:#959595;
+	margin:0 10px;
+	vertical-align:middle;
+}
+.fBMenu li:first-child::before,.fBMenu li:last-child::before{
+	display:none;
+}
+.fBMenu li a{
+	color:#8a8a8a;
+}
+.fBMenu li img{
+	margin-left:10px;
+	display:block;
+}
+
+.fSns{
+	position:absolute;
+	right:0;
+	top:0px;
+}
+.fSns li{
+	width:32px;
+	height:32px;
+	float:left;
+	border-radius:50%;
+	text-indent:-9999px;
+	margin-left:10px;
+	background:url(../images/common/sns1.png) no-repeat center center;
+	background-size:cover;
+}
+.fSns .youtube{}
+.fSns .linked{
+	background-image:url(../images/common/sns2.png);
+}
+.fSns .facebook{
+	background-image:url(../images/common/sns3.png);
+}
+.fSns .naver{
+	background-image:url(../images/common/sns4.png);
+}
+.fSns .youtube:hover{
+	background-image:url(../images/common/sns1_1.png);
+	background-position:center center;
+	background-size:cover;
+}
+.fSns .linked:hover{
+	background-image:url(../images/common/sns2_2.png);
+	background-position:center center;
+	background-size:cover;
+}
+.fSns .facebook:hover{
+	background-image:url(../images/common/sns3_3.png);
+	background-position:center center;
+	background-size:cover;
+}
+.fSns .naver:hover{
+	background-image:url(../images/common/sns4_4.png);
+	background-position:center center;
+	background-size:cover;
+}
+.fSns li a{
+	display:block;
+	height:100%;
+}
+
+.fLang{
+	position:absolute;
+	right:0;
+	bottom:30px;
+	background:url(../images/common/arrow_t_b.png) no-repeat right center;
+}
+.fLang a{
+	padding-right:10px;
+}

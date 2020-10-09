@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+
+.mainSlider{
+	position:relative;
+}
+.mainSlider img{
+	width:100%;
+	display:block;
+}
+
+.sliderBtn{
+	position:absolute;
+}
+.sliderBtn li{
+	float:left;
+	text-indent:-9999px;
+}
+.sliderBtn li a{
+	display:block;
+	height:100%;
+}
+
+.sliderLBtn{
+	left:5px;
+	bottom:5px;
+}
+.sliderLBtn li{
+	width:16px;
+	height:16px;
+	background:url(../images/main/blet_visual.png) no-repeat;
+	margin-right:3px;
+}
+.sliderLBtn li:first-child{
+	background-position:0 -16px;
+}
+.sliderLBtn li a{}
+
+.sliderRBtn{
+	right:0;
+	bottom:0;
+}
+.sliderRBtn li{
+	width:45px;
+	height:45px;
+	background:url(../images/main/btn_visual_cnt.png) no-repeat -46px 0;
+	margin-left:1px;
+}
+.sliderRBtn li:first-child{
+	background-position:0;
+}
+.sliderRBtn li:last-child{
+	background-position:-92px 0;
+}
+.sliderRBtn li a{}
+
+
+/*메인컨텐츠1*/
+
+.mainCon01{}
+.mainCon01 h2{
+	text-align:center;
+	margin-top:5px;
+	padding:15px 0;
+}
+.mainCon01 h2 img{
+	width:150px;
+}
+
+.con01List{}
+.con01List li{
+	background:url(../images/main/brandSite_img01.jpg) no-repeat center center;
+	background-size:cover;
+	padding:15px;
+	margin-top:2px;
+}
+.con01List li:nth-child(2){
+	background-image:url(../images/main/brandSite_img02.jpg);
+}
+.con01List li:last-child{
+	background-image:url(../images/main/brandSite_img03.jpg);
+}
+.con01List li a{
+	color:#fff;
+}
+.con01List li h3{
+	font-size:25px;
+	font-weight:normal;
+	padding-top:30%;
+}
+.con01List li p{}
+
+/*메인컨텐츠2*/
+
+.mainCon02{}
+.mainCon02 li{
+	width:calc(50% - 1px);
+	float:left;
+	background:#1C97FE;
+	margin-right:2px;
+	margin-top:2px;
+}
+.mainCon02 li:nth-child(2n){
+	margin-right:0;
+}
+.mainCon02 li a{}
+.mainCon02 li img{
+	width:100%;
+}
+
+.con02Info{
+	color:#fff;
+	padding:10px;
+}
+.con02Info h4{
+	font-size:15px;
+	margin-bottom:15px
+}
+.con02Info p{
+	font-size:12px;
+}
+
+
+/*메인컨텐츠3*/
+
+.mainCon03{}
+.mainCon03 h2{
+	text-align:center;
+	margin:20px 0;
+}
+.mainCon03 h2 img{
+	width:170px;
+}
+
+.con03List{}
+.con03List:nth-child(2n-1) a{
+	flex-direction:row-reverse;
+}
+.con03List a{
+	display:flex;
+}
+.con03List a>div{
+	width:50%;
+}
+.con03Img{
+	position:relative;
+}
+.con03Img img{
+	position:absolute;
+	max-width:100%;
+	max-height:100%;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+}
+.con03Txt{
+	background:#f1f1f1;
+	padding:20px;
+	box-sizing:border-box;
+}
+.con03Txt h3{}
+.con03Txt p{
+	font-size:11px;
+	margin-top:10px;
+	letter-spacing:1px;
+}
